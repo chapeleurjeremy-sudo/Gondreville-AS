@@ -1664,6 +1664,52 @@ body{background:#f5f8fc}
 }
 </style>
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+   /* ===== AFFICHAGE MOBILE - CORRECTION ===== */
+
+@media screen and (max-width: 800px) {
+
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Masquer complètement la barre bleue sur téléphone */
+  aside.side,
+  .side,
+  .sidebar {
+    display: none !important;
+  }
+
+  /* Application pleine largeur */
+  .app,
+  #app,
+  main,
+  .main,
+  .content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Évite que les éléments débordent */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto;
+  }
+}
 </head>
 <body>
 <div class="app">
